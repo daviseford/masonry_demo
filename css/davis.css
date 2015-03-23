@@ -1,0 +1,52 @@
+#container {
+    width: 260px;
+    /*width: 95%;*/
+    /*width: auto;*/
+    margin: 0 auto;
+}
+
+.sticker {
+    /*width: 64px;
+    height: 64px;*/
+}
+
+   .example-1 .sticker-img {
+       background-image: url(../images/roxy_64x64_badge.png);
+   }
+
+/* ==|== primary styles =====================================================
+   Author: Luke Shumard (lukeshumard.com)
+   ========================================================================== */
+
+#masonryContainer {
+    width: 100%;
+    /*width: 95%;*/
+    /*width: auto;*/
+    margin: 0 auto;
+}
+
+.item {
+    display: block;
+    /*float: left;*/
+    width: 64px;
+    margin: 0 20px 20px 0;
+    -webkit-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+    -moz-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+    -ms-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+    -o-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+    transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+}
+
+.featured {
+    width: 128px;
+}
+
+.item img {
+    width: 64px;
+    height: auto;
+}
+
+.featured img {
+    width: 128px;
+    height: auto;
+}

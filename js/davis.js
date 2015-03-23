@@ -1,23 +1,20 @@
 // JavaScript Document
-
-$(document).ready(function(){
-
-
-var container = document.querySelector('#container');
-var msnry = new Masonry( container, {
-  // options
-  columnWidth: 200,
-  itemSelector: '.item'
+$('document').ready(function() {
+    var options = {
+        videoId: 'VFS-vTtTqew',
+        start: 1,
+        ratio: 4/3 // usually either 4/3 or 16/9 -- tweak as needed
+    };
+    $('#wrapper').tubular(options);
 });
-//
-//var msnry1 = new Masonry( '#container', {
-//  // opti1ons
-//});
-//
-//var $container = $('#container');
-//// initialize
-//$container.masonry({
-//  columnWidth: 200,
-//  itemSelector: '.item'
-//});
+
+$(window).load(function() {
+        $('#container').masonry({
+            columnWidth: 84,
+            itemSelector: '.item'
+        }).imagesLoaded(function() {
+            $('#container').masonry('reload');
+        });
+
+    Sticker.init('.sticker');
 });
