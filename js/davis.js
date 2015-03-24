@@ -5,7 +5,7 @@ $('document').ready(function() {
         start: 1,
         ratio: 4/3 // usually either 4/3 or 16/9 -- tweak as needed
     };
-    $('#wrapper').tubular(options);
+    $('#container').tubular(options);
 });
 
 $(window).load(function() {
